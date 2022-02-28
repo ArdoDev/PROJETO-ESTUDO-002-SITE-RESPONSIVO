@@ -1,0 +1,285 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*corpo do site*/
+body{
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c
+}
+
+/*titulos*/
+
+h1, h2, h3{
+    font-family: Asap, sans-serif;
+    color: #000000
+}
+
+.botao {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #3f3258;
+    font-size: .9em;
+    border-radius: 4px;
+}
+
+/*navegação*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #69558d;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* cabeçalho */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../_imagens/obragiga.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #14011d;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+header h1{
+    color: #14011d;
+}
+
+header p{
+    margin-bottom: 2em;
+    max-width: 1000px;
+    -webkit-text-stroke-width: 0.5px; 
+    -webkit-text-stroke-color: #000;
+
+    
+
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #69558d;
+    color: #FFFFFF;
+    text-align: justify;
+
+}
+
+#sobre h2{
+    color: #FFFFFF;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #2e2242;
+}
+
+/* serviços */
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* fotos */
+
+
+
+div#fotos{
+padding: 0px 0px 0px 0px;
+    background-color: #d9c5ff;
+}
+section#fotos h2{
+    text-align: center;
+    background-color: #695096;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+
+div#fotos img{
+    position: relative;
+    margin: 15px;
+    width: 300px;
+    align-items: center;
+    box-shadow: 3px 3px 6px #221e2b73;
+    margin-left: 100px;
+
+}
+   
+
+/* contatos */
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    -webkit-text-stroke-width: 0.5px; 
+    -webkit-text-stroke-color: #000;
+}
+
+#contato h2{
+
+    color:#14011d;
+
+}
+
+/* rodapé */
+
+footer{
+
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #69558d;
+
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #000000;
+    -webkit-text-stroke-width: 0.2px; 
+    -webkit-text-stroke-color: #000;
+}
+
+
+/*css da responsividade*/
+
+
+@media screen and (min-width: 768px) {
+
+ /*navegação*/
+
+    nav{
+
+        flex-direction: row;
+        justify-content:space-around;
+
+    }
+
+    nav ul{
+
+        flex-direction: row; 
+        width: 70%;
+
+    }
+
+/*cabeçalho*/
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+
+    }
+
+/*sobre*/
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;    
+
+    }
+
+/*serviços*/
+
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0px 10px;
+    }
+
+
+/*contato*/
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato p, #contato h2{
+        width: 100%;
+    }
+}
+
